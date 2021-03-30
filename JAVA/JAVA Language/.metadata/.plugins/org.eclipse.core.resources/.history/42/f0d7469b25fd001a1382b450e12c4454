@@ -1,0 +1,12 @@
+package ComparatorInterface;
+
+import java.util.Comparator;
+
+public class NameStudent implements Comparator<NameStudent> {
+
+	@Override
+	public int compare(NameStudent o1, NameStudent o2) {
+		return o1.name.compareTo(o2.name);
+	}
+
+}

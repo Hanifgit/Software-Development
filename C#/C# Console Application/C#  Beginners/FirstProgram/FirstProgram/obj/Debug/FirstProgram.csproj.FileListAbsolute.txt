@@ -1,0 +1,7 @@
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\FirstProgram\FirstProgram\bin\Debug\FirstProgram.exe.config
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\FirstProgram\FirstProgram\bin\Debug\FirstProgram.exe
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\FirstProgram\FirstProgram\bin\Debug\FirstProgram.pdb
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\FirstProgram\FirstProgram\obj\Debug\FirstProgram.csprojAssemblyReference.cache
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\FirstProgram\FirstProgram\obj\Debug\FirstProgram.csproj.CoreCompileInputs.cache
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\FirstProgram\FirstProgram\obj\Debug\FirstProgram.exe
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\FirstProgram\FirstProgram\obj\Debug\FirstProgram.pdb

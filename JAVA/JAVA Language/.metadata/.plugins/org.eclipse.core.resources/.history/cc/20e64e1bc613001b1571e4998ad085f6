@@ -1,0 +1,160 @@
+package Inventory_Management_System;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.border.BevelBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JTable;
+import java.awt.Color;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.JScrollPane;
+
+public class Items {
+
+	private JFrame frame;
+	private JTextField txtName;
+	private JTextField txtDes;
+	private JTextField txtSales;
+	private JTextField txtTax;
+	private JTextField txtPrice;
+	private JTextField txtQuentity;
+	private JTextField txtExDate;
+	private JTable table;
+	private JScrollPane scrollPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Items window = new Items();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Items() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setBackground(new Color(100, 149, 237));
+		frame.setBounds(100, 100, 840, 434);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		panel.setBounds(10, 47, 359, 298);
+		frame.getContentPane().add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblItemsname = new JLabel("Product Name :");
+		lblItemsname.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblItemsname.setBounds(10, 17, 95, 14);
+		panel.add(lblItemsname);
+		
+		JLabel lblItemsname_1 = new JLabel("Description :");
+		lblItemsname_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblItemsname_1.setBounds(10, 60, 95, 14);
+		panel.add(lblItemsname_1);
+		
+		JLabel lblItemsname_2 = new JLabel("Sales Price :");
+		lblItemsname_2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblItemsname_2.setBounds(10, 101, 95, 14);
+		panel.add(lblItemsname_2);
+		
+		JLabel lblItemsname_3 = new JLabel("Tax :");
+		lblItemsname_3.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblItemsname_3.setBounds(10, 142, 95, 14);
+		panel.add(lblItemsname_3);
+		
+		JLabel lblRetailPrice = new JLabel("Retail Price :");
+		lblRetailPrice.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblRetailPrice.setBounds(10, 184, 95, 14);
+		panel.add(lblRetailPrice);
+		
+		JLabel lblQuentity = new JLabel("Quentity :");
+		lblQuentity.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblQuentity.setBounds(10, 224, 95, 14);
+		panel.add(lblQuentity);
+		
+		JLabel lblItemsname_2_1 = new JLabel("Expire Date :");
+		lblItemsname_2_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblItemsname_2_1.setBounds(10, 264, 95, 14);
+		panel.add(lblItemsname_2_1);
+		
+		txtName = new JTextField();
+		txtName.setColumns(10);
+		txtName.setBounds(115, 11, 237, 29);
+		panel.add(txtName);
+		
+		txtDes = new JTextField();
+		txtDes.setColumns(10);
+		txtDes.setBounds(115, 51, 237, 29);
+		panel.add(txtDes);
+		
+		txtSales = new JTextField();
+		txtSales.setColumns(10);
+		txtSales.setBounds(115, 91, 237, 29);
+		panel.add(txtSales);
+		
+		txtTax = new JTextField();
+		txtTax.setColumns(10);
+		txtTax.setBounds(115, 136, 237, 29);
+		panel.add(txtTax);
+		
+		txtPrice = new JTextField();
+		txtPrice.setColumns(10);
+		txtPrice.setBounds(115, 178, 237, 29);
+		panel.add(txtPrice);
+		
+		txtQuentity = new JTextField();
+		txtQuentity.setColumns(10);
+		txtQuentity.setBounds(115, 218, 237, 29);
+		panel.add(txtQuentity);
+		
+		txtExDate = new JTextField();
+		txtExDate.setColumns(10);
+		txtExDate.setBounds(115, 258, 237, 29);
+		panel.add(txtExDate);
+		
+		JLabel lblNewLabel_4 = new JLabel("Items");
+		lblNewLabel_4.setForeground(new Color(255, 255, 255));
+		lblNewLabel_4.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblNewLabel_4.setBounds(321, 11, 64, 14);
+		frame.getContentPane().add(lblNewLabel_4);
+		
+		scrollPane = new JScrollPane();
+		scrollPane.setBounds(390, 47, 424, 286);
+		frame.getContentPane().add(scrollPane);
+		
+		table = new JTable();
+		scrollPane.setViewportView(table);
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{null, null, null, null, null, null, null},
+			},
+			new String[] {
+				"Product Name", "Description", "Sales Price", "Tax", "Retail Price", "Quentity", "Expire Date"
+			}
+		));
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 18 resources" deleteContents="false" description="Delete 18 resources" element1="/Abstraction" element10="/FileDirectory" element11="/Inheritance" element12="/Java" element13="/Methods" element14="/Package" element15="/Polymorphism" element16="/StaticMethod" element17="/StaticVariable" element18="/VariableLengthArguments" element2="/Abstraction2" element3="/Abstraction3" element4="/CallByValueORreference" element5="/callbyvaluevscallbyreference" element6="/ClassAndObject" element7="/Constructor" element8="/Encapsulation" element9="/ExceptionHandling" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="18" stamp="1599659253330"/>
+</session>

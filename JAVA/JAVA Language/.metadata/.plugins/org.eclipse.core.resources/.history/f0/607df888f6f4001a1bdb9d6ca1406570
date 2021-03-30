@@ -1,0 +1,40 @@
+package Catcutator;
+
+import java.awt.Color;
+import java.awt.ComponentOrientation;
+import java.awt.Container;
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+
+@SuppressWarnings("serial")
+public class Standard extends JFrame {
+	private Container container;
+	private JTextArea textArea;
+	private Font font;
+	
+	public Standard() {
+		//container create
+		container = this.getContentPane();
+		container.setBackground(Color.white);
+		container.setLayout(null);
+		
+		font = new Font("Arial",Font.BOLD,16);
+		textArea = new JTextArea();
+		textArea.setBounds(0, 0, 320, 200);
+		textArea.setFont(font);
+		textArea.setLineWrap(true);
+		textArea.setWrapStyleWord(true);
+		textArea.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+		container.add(textArea);
+	}
+	
+	public static void main(String[] args) {
+		Standard icon = new Standard();
+		icon.setVisible(true);
+		icon.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    icon.setBounds(200, 100, 350, 500);
+		icon.setTitle("Notepad");
+	}
+}

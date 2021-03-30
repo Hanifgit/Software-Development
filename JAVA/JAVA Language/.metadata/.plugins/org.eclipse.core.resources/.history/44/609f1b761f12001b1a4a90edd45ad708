@@ -1,0 +1,256 @@
+package Inventory_Management_System;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.border.BevelBorder;
+import java.awt.Font;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.util.Vector;
+
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JScrollPane;
+
+
+@SuppressWarnings("serial")
+public class Vendor extends JFrame {
+	
+	private JFrame frame;
+	private JTextField txtName;
+	private JTextField txtPhone;
+	private JTextField txtEmail;
+	private JTextField txtAddress;
+
+	/**
+	 * Launch the application.
+	 */
+	public void NewScreen() {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Vendor window = new Vendor();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Vendor() {
+		initialize();
+		connect();
+		load();
+		this.setBounds(100, 100, 528, 486);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	Connection connection;
+	PreparedStatement preparedStatement;
+	DefaultTableModel defaultTableModel;
+	private JTable table;
+	
+	
+	public void connect() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost/inventorymanagement","root","");
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void load() {
+		int a;
+		try {
+			preparedStatement = connection.prepareStatement("select * from vendor");
+			ResultSet resultSet = preparedStatement.executeQuery();
+			
+			ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
+			a = resultSetMetaData.getColumnCount();
+			defaultTableModel.setRowCount(0);
+			
+			while(resultSet.next()) {
+				Vector<Object> v2 = new Vector<>();
+				for(int i=1;i<=a;i++) {
+					v2.add(resultSet.getString("id"));
+					v2.add(resultSet.getString("name"));
+					v2.add(resultSet.getString("phone"));
+					v2.add(resultSet.getString("email"));
+					v2.add(resultSet.getString("address"));
+				}
+				defaultTableModel.addRow(v2);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 528, 486);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		panel.setBounds(23, 62, 348, 157);
+		frame.getContentPane().add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Vendor Name :");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel.setBounds(10, 22, 95, 14);
+		panel.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Phone :");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel_1.setBounds(10, 59, 57, 14);
+		panel.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Email :");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel_2.setBounds(10, 90, 46, 14);
+		panel.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("Address :");
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel_3.setBounds(10, 121, 57, 14);
+		panel.add(lblNewLabel_3);
+		
+		txtName = new JTextField();
+		txtName.setBounds(115, 20, 208, 20);
+		panel.add(txtName);
+		txtName.setColumns(10);
+		
+		txtPhone = new JTextField();
+		txtPhone.setColumns(10);
+		txtPhone.setBounds(115, 57, 208, 20);
+		panel.add(txtPhone);
+		
+		txtEmail = new JTextField();
+		txtEmail.setColumns(10);
+		txtEmail.setBounds(115, 88, 208, 20);
+		panel.add(txtEmail);
+		
+		txtAddress = new JTextField();
+		txtAddress.setColumns(10);
+		txtAddress.setBounds(115, 119, 208, 20);
+		panel.add(txtAddress);
+		
+		JButton btnAdd = new JButton("Add");
+		btnAdd.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					String Name = txtName.getText();
+					String Phone = txtPhone.getText();
+					String email = txtEmail.getText();
+					String address = txtAddress.getText();
+					preparedStatement = connection.prepareStatement("insert into vendor(name,phone,email,address)values(?,?,?,?)");
+					preparedStatement.setString(1, Name);
+					preparedStatement.setString(2, Phone);
+					preparedStatement.setString(3, email);
+					preparedStatement.setString(4, address);
+					preparedStatement.executeUpdate();
+					JOptionPane.showInputDialog(this,"Vendor Added");
+					
+					txtName.setText("");
+					txtPhone.setText("");
+					txtEmail.setText("");
+					txtAddress.setText("");
+					txtName.requestFocus();
+				} catch (SQLException e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
+		btnAdd.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnAdd.setBounds(400, 62, 89, 28);
+		frame.getContentPane().add(btnAdd);
+		
+		JButton btnEdit = new JButton("Edit");
+		btnEdit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				defaultTableModel = (DefaultTableModel)table.getModel();
+				int selected = table.getSelectedRow();
+				int id = Integer.parseInt(defaultTableModel.getValueAt(selected, 0).toString());
+				String Name = txtName.getText();
+				String Phone = txtPhone.getText();
+				String email = txtEmail.getText();
+				String address = txtAddress.getText();
+				try {
+					preparedStatement = connection.prepareStatement("update vendor set name=?,phone=?,email=?,address=? where id=?");
+					preparedStatement.setString(1, Name);
+					preparedStatement.setString(2, Phone);
+					preparedStatement.setString(3, email);
+					preparedStatement.setString(4, address);
+					preparedStatement.setInt(5, id);
+					preparedStatement.executeUpdate();
+					JOptionPane.showInputDialog(this,"Vendor Update");
+					
+					txtName.setText("");
+					txtPhone.setText("");
+					txtEmail.setText("");
+					txtAddress.setText("");
+					txtName.requestFocus();
+					btnAdd.setEnabled(true);
+					//load();
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		btnEdit.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnEdit.setBounds(400, 101, 89, 33);
+		frame.getContentPane().add(btnEdit);
+		
+		JButton btnDelete = new JButton("Delete");
+		btnDelete.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnDelete.setBounds(400, 144, 89, 30);
+		frame.getContentPane().add(btnDelete);
+		
+		JButton btnCancle = new JButton("Cancle");
+		btnCancle.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnCancle.setBounds(400, 185, 89, 34);
+		frame.getContentPane().add(btnCancle);
+		
+		JLabel lblNewLabel_4 = new JLabel("Vendor");
+		lblNewLabel_4.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblNewLabel_4.setBounds(215, 24, 64, 14);
+		frame.getContentPane().add(lblNewLabel_4);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(26, 241, 463, 195);
+		frame.getContentPane().add(scrollPane);
+		
+		table = new JTable();
+		scrollPane.setViewportView(table);
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{null, null, null, null, null},
+			},
+			new String[] {
+				"ID", "Vendor Name", "Phone", "Email", "Address"
+			}
+		));
+	}
+}

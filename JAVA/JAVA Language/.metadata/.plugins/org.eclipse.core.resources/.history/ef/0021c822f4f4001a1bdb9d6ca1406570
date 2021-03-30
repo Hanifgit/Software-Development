@@ -1,0 +1,25 @@
+package Catcutator;
+
+import java.awt.Color;
+import java.awt.Container;
+
+import javax.swing.JFrame;
+
+public class Standard extends JFrame {
+	private Container container;
+	
+	public Standard() {
+		//container create
+		container = this.getContentPane();
+		container.setBackground(Color.white);
+		container.setLayout(null);
+	}
+	
+	public static void main(String[] args) {
+		Standard icon = new Standard();
+		icon.setVisible(true);
+		icon.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    icon.setBounds(200, 100, 350, 500);
+		icon.setTitle("Notepad");
+	}
+}

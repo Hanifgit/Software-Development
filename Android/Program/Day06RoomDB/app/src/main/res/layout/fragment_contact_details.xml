@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ContactDetailsFragment">
+
+        <ImageButton
+            android:id="@+id/emailBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="97dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="338dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:src="@drawable/ic_baseline_email_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/smsBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/smsBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="97dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="19dp"
+            android:src="@drawable/ic_baseline_sms_24"
+            app:layout_constraintStart_toEndOf="@+id/callBtn"
+            app:layout_constraintTop_toTopOf="@+id/emailBtn" />
+
+        <TextView
+            android:id="@+id/detailsEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsPhone" />
+
+        <TextView
+            android:id="@+id/detailsPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsName" />
+
+        <TextView
+            android:id="@+id/detailsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/callBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="97dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="41dp"
+            android:layout_marginLeft="41dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:src="@drawable/ic_baseline_call_24"
+            app:layout_constraintEnd_toStartOf="@+id/smsBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/smsBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

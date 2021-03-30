@@ -1,0 +1,10 @@
+C:\Users\Papon\source\repos\DialogMessageBox\DialogMessageBox\obj\Debug\DialogMessageBox.csprojAssemblyReference.cache
+C:\Users\Papon\source\repos\DialogMessageBox\DialogMessageBox\obj\Debug\DialogMessageBox.Form1.resources
+C:\Users\Papon\source\repos\DialogMessageBox\DialogMessageBox\obj\Debug\DialogMessageBox.Properties.Resources.resources
+C:\Users\Papon\source\repos\DialogMessageBox\DialogMessageBox\obj\Debug\DialogMessageBox.csproj.GenerateResource.cache
+C:\Users\Papon\source\repos\DialogMessageBox\DialogMessageBox\obj\Debug\DialogMessageBox.csproj.CoreCompileInputs.cache
+C:\Users\Papon\source\repos\DialogMessageBox\DialogMessageBox\bin\Debug\DialogMessageBox.exe.config
+C:\Users\Papon\source\repos\DialogMessageBox\DialogMessageBox\bin\Debug\DialogMessageBox.exe
+C:\Users\Papon\source\repos\DialogMessageBox\DialogMessageBox\bin\Debug\DialogMessageBox.pdb
+C:\Users\Papon\source\repos\DialogMessageBox\DialogMessageBox\obj\Debug\DialogMessageBox.exe
+C:\Users\Papon\source\repos\DialogMessageBox\DialogMessageBox\obj\Debug\DialogMessageBox.pdb

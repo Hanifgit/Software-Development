@@ -1,0 +1,26 @@
+package RakibulAhasanPapon;
+
+public class Account extends Calculator {
+    String personINFO;
+    double balance;
+    double interestRate;
+    
+    public Account(String personINFO,double balance,double interestRate) {
+    	this.personINFO = personINFO ;
+        this.balance = balance;
+        this.interestRate = interestRate;
+	}
+    
+    public void  withdraw() throws MyException {
+		super.subtracting(balance, 23);
+	}
+    
+    public void deposit() {
+		
+	}
+    
+    public void calculateInterest() {
+		
+	}
+    
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlighBooking", "FlighBooking\FlighBooking.csproj", "{E7A1C4AE-4A34-4451-B58C-A8C2D693B755}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7A1C4AE-4A34-4451-B58C-A8C2D693B755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A1C4AE-4A34-4451-B58C-A8C2D693B755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A1C4AE-4A34-4451-B58C-A8C2D693B755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A1C4AE-4A34-4451-B58C-A8C2D693B755}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {208700E7-0A95-4C53-B3CF-CB7242946106}
+	EndGlobalSection
+EndGlobal

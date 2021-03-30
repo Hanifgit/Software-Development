@@ -1,0 +1,30 @@
+package individualPresentation;
+
+public class ThreadMethod_01 extends Thread {
+	int cnt = 0;
+	@Override
+	public void run() {
+		System.out.println("Inside run Method : "+Thread.currentThread().getName());
+		for(int i=0;i<1000;i++) {
+			cnt++;
+		}
+	}
+
+	public static void main(String args[]) throws InterruptedException {
+		// creating two thread
+		ThreadMethod_01 t1 = new ThreadMethod_01();
+		ThreadMethod_01 t2 = new ThreadMethod_01();
+		
+		System.out.println(t1.isAlive()); //return true/false
+		// this will call the run() method
+		t1.start();
+		t2.start();
+		
+		System.out.println(t1.isAlive());
+		
+		System.out.println("Inside main Method : "+Thread.currentThread().getName());
+		
+		t1.join();
+		System.out.println(t1.cnt);
+	}
+}

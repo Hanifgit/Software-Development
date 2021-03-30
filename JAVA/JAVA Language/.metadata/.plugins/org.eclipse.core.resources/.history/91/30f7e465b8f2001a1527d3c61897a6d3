@@ -1,0 +1,48 @@
+package JTabbedPane;
+
+import java.awt.Container;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JSpinner;
+import javax.swing.JTabbedPane;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+
+@SuppressWarnings("serial")
+public class CreateJTabbedPane extends JFrame implements ChangeListener {
+	private Container container;
+	private JSpinner spinner;
+	private JLabel label;
+	private JTabbedPane tabbedPane;
+
+	public CreateJTabbedPane() {
+		Componant();
+	}
+
+	public void Componant() {
+		// container create
+		container = this.getContentPane();
+		container.setLayout(null);
+		
+		tabbedPane = new JTabbedPane();
+		tabbedPane.setBounds(50, 50, 300, 300);
+		container.add(tabbedPane);
+		
+	}
+
+	@Override
+	public void stateChanged(ChangeEvent e) {
+		String getValue = spinner.getValue().toString();
+		int value = Integer.parseInt(getValue);
+		label.setText("The value: "+value);
+	}
+	
+	public static void main(String[] args) {
+		CreateJTabbedPane icon = new CreateJTabbedPane();
+		icon.setVisible(true);
+		icon.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		icon.setBounds(200, 100, 450, 450);
+		icon.setTitle("Text Field Demo");
+	}
+}

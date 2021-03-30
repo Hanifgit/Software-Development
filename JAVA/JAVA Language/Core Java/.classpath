@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Basic Java"/>
+	<classpathentry kind="src" path="Class And Object"/>
+	<classpathentry kind="src" path="Constructor"/>
+	<classpathentry kind="src" path="Abstraction"/>
+	<classpathentry kind="src" path="Encapsulation"/>
+	<classpathentry kind="src" path="Inheritance"/>
+	<classpathentry kind="src" path="Polymorphism"/>
+	<classpathentry kind="src" path="Exception Handling"/>
+	<classpathentry kind="src" path="Package"/>
+	<classpathentry kind="src" path="File Directory"/>
+	<classpathentry kind="src" path="Other"/>
+	<classpathentry kind="src" path="MultiThreading"/>
+	<classpathentry kind="src" path="Java Collections"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-14">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

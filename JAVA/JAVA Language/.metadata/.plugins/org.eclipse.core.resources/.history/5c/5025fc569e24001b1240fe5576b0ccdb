@@ -1,0 +1,18 @@
+import java.io.IOException;
+import java.util.Random;
+
+public class Classk {
+   public static void main(String[] args) {
+	  Random random = new Random(); 
+	  int a = random.nextInt();
+	  System.out.println(a);
+	  
+	try {
+		int i;
+		i = System.in.read(); //returns ASCII code of 1st character 
+		System.out.println((char)i);//will print the character  
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
+   }
+}

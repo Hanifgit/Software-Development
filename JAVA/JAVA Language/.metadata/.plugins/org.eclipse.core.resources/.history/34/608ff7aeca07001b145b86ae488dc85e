@@ -1,0 +1,34 @@
+package RakibulAhasanPapon;
+
+public class Account extends Calculator {
+    String personINFO;
+    double balance;
+    double interestRate;
+    
+    public Account(String personINFO,double balance,double interestRate) {
+    	this.personINFO = personINFO ;
+        this.balance = balance;
+        this.interestRate = interestRate;
+        System.out.println(personINFO);
+	}
+    
+    public void  withdraw() throws MyException {
+    	try {
+    		System.out.println(super.subtracting(balance, 23));
+		} catch (Exception e) {
+			System.err.println(e);
+		}
+	}
+    
+    public void deposit() throws MyException {
+    	System.out.println(super.adding(balance, 23));
+	}
+    
+    public void calculateInterest() throws MyException {
+    	double rt = super.multiplying(interestRate/100.0, 23);
+    	rt+=1;
+    	double interest = super.multiplying(balance, rt);
+    	System.out.println(interest);
+	}
+    
+}

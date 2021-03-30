@@ -1,0 +1,6 @@
+package Lab_05;
+
+public abstract class PersonalInfo {
+	abstract void personalAddress(int id,String home_district,int height,String gender);
+	abstract void academicInfo(int id,String name,String dept,double cgpa);
+}

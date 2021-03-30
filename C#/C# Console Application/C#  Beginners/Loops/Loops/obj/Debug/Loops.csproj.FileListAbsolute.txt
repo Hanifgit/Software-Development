@@ -1,0 +1,7 @@
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\Loops\Loops\bin\Debug\Loops.exe.config
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\Loops\Loops\bin\Debug\Loops.exe
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\Loops\Loops\bin\Debug\Loops.pdb
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\Loops\Loops\obj\Debug\Loops.csprojAssemblyReference.cache
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\Loops\Loops\obj\Debug\Loops.csproj.CoreCompileInputs.cache
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\Loops\Loops\obj\Debug\Loops.exe
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\Loops\Loops\obj\Debug\Loops.pdb

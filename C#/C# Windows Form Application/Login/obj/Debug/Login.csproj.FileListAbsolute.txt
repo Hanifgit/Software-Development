@@ -1,0 +1,11 @@
+C:\Users\Papon\source\repos\Login\obj\Debug\Login.csprojAssemblyReference.cache
+C:\Users\Papon\source\repos\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Users\Papon\source\repos\Login\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\Papon\source\repos\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\Papon\source\repos\Login\bin\Debug\Login.exe.config
+C:\Users\Papon\source\repos\Login\bin\Debug\Login.exe
+C:\Users\Papon\source\repos\Login\bin\Debug\Login.pdb
+C:\Users\Papon\source\repos\Login\obj\Debug\Login.exe
+C:\Users\Papon\source\repos\Login\obj\Debug\Login.pdb
+C:\Users\Papon\source\repos\Login\obj\Debug\Login.WindowForm.resources
+C:\Users\Papon\source\repos\Login\obj\Debug\Login.SignIn.resources

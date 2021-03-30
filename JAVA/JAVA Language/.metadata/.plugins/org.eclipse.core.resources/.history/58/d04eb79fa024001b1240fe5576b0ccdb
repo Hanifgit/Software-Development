@@ -1,0 +1,34 @@
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.ListIterator;
+
+public class Classk {
+	/*
+	 * public static void main(String[] args) { ArrayList<String> list = new
+	 * ArrayList<String>(); list.add("A"); list.add("B"); list.add("C");
+	 * list.add("D"); list.add("E");
+	 * 
+	 * ListIterator<String> iterator = list.listIterator();
+	 * 
+	 * System.out.println("Displaying list element:");
+	 * 
+	 * while (iterator.hasPrevious()) { System.out.println(iterator.hasPrevious());
+	 * } System.out.println(); }
+	 */
+	public static void main(String[] args) {
+		/*
+		 * String[] strArray= {"bubt","cse","dept"}; Arrays.sort(strArray); for(String
+		 * str:strArray) { System.out.println(str+ " "); } System.out.println();
+		 */
+		ArrayList<String>arlTest = new ArrayList<String>();
+		arlTest.add("D");
+		arlTest.add("U");
+		arlTest.add("K");
+		arlTest.add("E");
+		arlTest.remove("D");
+		arlTest.remove(2);
+		System.out.println("K");
+	}
+	
+}

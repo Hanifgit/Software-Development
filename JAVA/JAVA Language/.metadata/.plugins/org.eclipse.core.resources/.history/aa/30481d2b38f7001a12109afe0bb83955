@@ -1,0 +1,24 @@
+package Lab_05;
+
+public class Student extends PersonalInfo {
+    int id;
+    String home_district;
+    int height;
+    String gender;
+    String name;
+    String dept;
+    double cgpa;
+    
+	@Override
+	void personalAddress(int id, String home_district, int height, String gender) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void academicInfo(int id, String name, String dept, double cgpa) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

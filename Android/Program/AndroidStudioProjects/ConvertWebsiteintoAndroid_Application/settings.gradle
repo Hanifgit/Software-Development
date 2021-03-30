@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Convert Website into Android_Application"

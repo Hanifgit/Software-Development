@@ -1,0 +1,13 @@
+package Lab_05;
+
+import java.util.Scanner;
+
+public class TestProgram {
+	public static void main(String[] args) {
+		PersonalInfo objInfo;
+		Student objStudent = new Student();
+		
+		Scanner input = new Scanner(System.in);
+		
+	}
+}

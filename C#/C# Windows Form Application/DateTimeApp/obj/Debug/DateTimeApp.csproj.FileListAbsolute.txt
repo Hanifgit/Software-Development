@@ -1,0 +1,20 @@
+C:\Users\Papon\source\repos\DateTimeApp\bin\Debug\DateTimeApp.exe.config
+C:\Users\Papon\source\repos\DateTimeApp\bin\Debug\DateTimeApp.exe
+C:\Users\Papon\source\repos\DateTimeApp\bin\Debug\DateTimeApp.pdb
+C:\Users\Papon\source\repos\DateTimeApp\obj\Debug\DateTimeApp.csprojAssemblyReference.cache
+C:\Users\Papon\source\repos\DateTimeApp\obj\Debug\DateTimeApp.Form1.resources
+C:\Users\Papon\source\repos\DateTimeApp\obj\Debug\DateTimeApp.Properties.Resources.resources
+C:\Users\Papon\source\repos\DateTimeApp\obj\Debug\DateTimeApp.csproj.GenerateResource.cache
+C:\Users\Papon\source\repos\DateTimeApp\obj\Debug\DateTimeApp.csproj.CoreCompileInputs.cache
+C:\Users\Papon\source\repos\DateTimeApp\obj\Debug\DateTimeApp.exe
+C:\Users\Papon\source\repos\DateTimeApp\obj\Debug\DateTimeApp.pdb
+C:\Users\Papon\source\repos\C# ( Desktop)\DateTimeApp\bin\Debug\DateTimeApp.exe.config
+C:\Users\Papon\source\repos\C# ( Desktop)\DateTimeApp\bin\Debug\DateTimeApp.exe
+C:\Users\Papon\source\repos\C# ( Desktop)\DateTimeApp\bin\Debug\DateTimeApp.pdb
+C:\Users\Papon\source\repos\C# ( Desktop)\DateTimeApp\obj\Debug\DateTimeApp.csprojAssemblyReference.cache
+C:\Users\Papon\source\repos\C# ( Desktop)\DateTimeApp\obj\Debug\DateTimeApp.Form1.resources
+C:\Users\Papon\source\repos\C# ( Desktop)\DateTimeApp\obj\Debug\DateTimeApp.Properties.Resources.resources
+C:\Users\Papon\source\repos\C# ( Desktop)\DateTimeApp\obj\Debug\DateTimeApp.csproj.GenerateResource.cache
+C:\Users\Papon\source\repos\C# ( Desktop)\DateTimeApp\obj\Debug\DateTimeApp.csproj.CoreCompileInputs.cache
+C:\Users\Papon\source\repos\C# ( Desktop)\DateTimeApp\obj\Debug\DateTimeApp.exe
+C:\Users\Papon\source\repos\C# ( Desktop)\DateTimeApp\obj\Debug\DateTimeApp.pdb

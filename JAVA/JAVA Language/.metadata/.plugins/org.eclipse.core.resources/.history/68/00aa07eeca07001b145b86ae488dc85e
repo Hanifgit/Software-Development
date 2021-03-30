@@ -1,0 +1,23 @@
+package RakibulAhasanPapon;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		try {	
+			String myINFO = input.next();
+			double balance = input.nextDouble();
+			double interestRate = input.nextDouble();
+			//"Rakibul Ahasan Papon ,ID- 022", 10000, 20
+			Account objAccount = new Account(myINFO, balance, interestRate);
+			
+			objAccount.withdraw();
+			objAccount.deposit();
+			objAccount.calculateInterest();
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}

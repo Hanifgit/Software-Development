@@ -1,0 +1,71 @@
+Step 1. Open terminal.
+
+Step 2. Type command to install gcc or g++ complier: $ sudo apt-get install build-essential
+
+Step 3. To check gcc version type this command: $ gcc --version or gcc –v
+
+Step 4. Now go to that folder where you will create C/C++ programs : 
+
+         $ cd Desktop/
+
+         $ sudo mkdir programs
+
+         $ cd programs/
+
+Step 5. Open a file using any editor.
+
+        $ sudo gedit first.c (for C programs)
+
+        $ sudo gedit hello.cpp (for C++ prgrams)
+
+Step 6. Add this code in the file:
+
+       (i). C program code:
+
+       #include<stdio.h>
+
+       int main(){
+
+            printf(“\n\nWelcome to my Homepage!!\n\n”);
+
+            return 0;
+       }
+
+      (i). C++ program code:
+
+      #include<iostream>
+
+      using namespace std;
+
+      int main(){
+
+            cout<<“\n\nHello World,\nWelcome to my first C ++ program on Ubuntu Linux\n\n”<<endl;
+
+            return 0;
+
+       }
+
+Step 7. Save the file and exit.
+
+Step 8. Compile the program using any of the following command:
+
+        (i). Compiling C program: $ sudo gcc first.c (Or) $ sudo gcc –o first first.c
+
+        (ii). Compiling C++ program: $ sudo g++ hello.cpp (or) $ sudo g++ -o hello hello.cpp
+
+Step 9. To run this program type this command:
+
+        (i). For running C program : 
+                 $ ./a.out (If you compiled using first command)
+
+              Or $ ./first (If you compiled using second command)
+
+        (ii). For running C++ program :
+
+                $ ./a.out (If you compiled using first command)
+              Or
+                $ ./hello (If you compiled using second command)
+
+It will show output on the terminal.
+
+Try this. All the best!!!

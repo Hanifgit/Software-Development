@@ -1,0 +1,20 @@
+package RakibulAhasanPapon;
+
+public class Account extends Calculator {
+    String personINFO;
+    double balance;
+    double interestRate;
+    
+    public void  withdraw() {
+		
+	}
+    
+    public void deposit() {
+		
+	}
+    
+    public void calculateInterest() {
+		
+	}
+    
+}

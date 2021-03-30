@@ -1,0 +1,47 @@
+package individualPresentation;
+
+public class Interface_ {
+	public static void main(String[] args) {
+		X objA = new X();
+		Y objB = new Y();
+
+//		objA.start();
+//		objB.start();
+//		Thread thread1 = new Thread(objA);
+//		Thread thread2 = new Thread(objB);
+//		try {
+//			thread1.start();
+//			thread2.start();
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
+	}
+}
+
+class X implements Runnable {
+	public void run() {
+		for (int i = 0; i <= 10; i++) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println("R");
+		}
+	}
+}
+
+class Y extends X implements Runnable {
+	public void run() {
+		for (int i = 0; i <= 10; i++) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println("A");
+		}
+	}
+}

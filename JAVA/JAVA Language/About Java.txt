@@ -1,0 +1,251 @@
+Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995.James Gosling is known as the father of Java.
+Before Java, its name was Oak.Java has a runtime environment (JRE) and API, it is called a platform.Java program using javac tool, java compiler converts the source code into byte code.
+
+There are many devices where Java is currently used:
+1)Desktop Applications - acrobat reader, media player, antivirus, etc.
+2)Web Applications - javatpoint.com, etc.
+3)Enterprise Applications - banking applications.
+4)Mobile Application -  Android and Java ME 
+5)Embedded System
+6)Smart Card
+7)Robotics
+8)Games
+
+Basic concepts of OOPs are:
+1)Object
+2)Class
+3)Inheritance
+4)Polymorphism
+5)Abstraction
+6)Encapsulation
+
+Features of Java :
+1)Simple
+2)Object-Oriented
+3)Portable
+4)Platform independent
+5)Secured
+6)Robust
+7)Architecture neutral
+8)Interpreted
+9)High Performance
+10)Multithreaded
+11)Distributed
+12)Dynamic
+
+C++ vs Java
+
+similarities:
+1) platform-dependent
+
+differences:
+1) C++ is mainly used for system programming.
+   Java is mainly used for application programming.
+2) C++ supports the goto statement.
+   Java doesn't support the goto statement.
+3) C++ supports multiple inheritance.
+   Java doesn't support multiple inheritance through class.It can be achieved by interfaces in java.
+4) C++ supports operator overloading.
+   Java doesn't support operator overloading.
+5) You can write pointer program in C++.
+   you can't write the pointer program in java.
+6) C++ uses compiler only.
+   Java uses compiler and interpreter both.
+7) C++ supports both call by value and call by reference.
+   Java supports call by value only. There is no call by reference in java.
+8) C++ supports structures and unions.
+   Java doesn't support structures and unions.
+9) C++ doesn't support >>> operator.
+   Java supports unsigned right shift >>> operator 
+
+Java Variables :
+   Variable is a name of memory location.(allocated in memory)
+   There are three types of variables in java: 
+      1)local
+      2)instance and
+      3)static.
+   There are two types of data types in Java: 
+      1)primitive(char(2), byte(1), short(2), int(4), long(8), float(4) and double(8)) and 
+      2)non-primitive( Classes, Interfaces, and Arrays).
+
+Unicode is a universal international standard character encoding 
+
+Operators in Java:
+1) Unary Operator,{(postfix-> expr++ expr--) (prefix-> ++expr --expr +expr -expr ~ !)}
+2) Arithmetic Operator,{(multiplicative-> * / %) ( additive-> + - )}
+3) Shift Operator, (shift -> << >> >>>)
+4) Relational Operator,{comparison-> < > <= >= instanceof) (equality-> == !=)}
+5) Bitwise Operator,{(bitwise AND &) (bitwise exclusive OR ^) (bitwise inclusive OR |)}
+6) Logical Operator,{(Logical AND &&) (logical OR ||)}
+7) Ternary Operator and {ternary ? :}
+8) Assignment Operator. {assignment-> = += -= *= /= %= &= ^= |= <<= >>= >>>= }
+
+ Left Shift:
+    10<<2
+    -----
+    10 Bin -> 00001010
+    10<<2  -> 00101000(40)
+
+ Right Shift:
+    20>>2
+    -----
+    20 Bin -> 00010100
+    20>>2  -> 00000010(5)
+Negative number 2's complete korte hove.then sift korbo.jodi MSB digit 1 hoie abr MSB digit bade 2's complete korbo
+
+Object-Oriented Programming System :
+1)Object
+2)Class
+3)Inheritance
+4)Polymorphism
+5)Abstraction
+6)Encapsulation
+
+Inheritance : 
+যখন কোনও বস্তু প্যারেন্ট অবজেক্টের সমস্ত সম্পত্তি এবং আচরণগুলি অর্জন করে, তখন এটি উত্তরাধিকার হিসাবে পরিচিত। এটি কোড পুনরায় ব্যবহারযোগ্যতা সরবরাহ করে। 
+এটি রানটাইম পলিমারফিজম অর্জন করতে ব্যবহৃত হয়।(extends)
+
+Polymorphism :
+যদি একটি কাজ বিভিন্ন উপায়ে সম্পাদন করা হয় তবে এটি বহুকর্ম হিসাবে পরিচিত।জাভাতে, পলিমারফিজম অর্জনের জন্য আমরা পদ্ধতি ওভারলোডিং এবং মেথড ওভাররাইড ব্যবহার করি।
+compile Time And Run time(method overloding(name same,parameter different) And Method overriding(name same,parameter same))
+
+Abstraction:
+অভ্যন্তরীণ বিবরণ লুকানো. Hiding the implementation details and showing only the functionality to the user.
+ * Abstract method has no body
+ * Abstract method must be ends with a semicolon
+ * Abstract method must be Abstract Class
+ * Abstract method must be overridden
+ * Abstract method can never be final and static
+ * Abstract Class have abstract and non-abstract method
+ * Non-abstract class can not have abstract method
+ * Abstract class not create object but create reference variable
+ * Abstract class er object build kora jaie na.use jnno Inheritance(extends) kora jagbe
+
+Encapsulation :
+Variable ,Method a single unit(packaging) class And data protecting thake(data hiding)(setter and getter use korie).
+
+3 Ways to initialize object
+
+1)By reference variable
+2)By method
+3)By constructor
+
+Anonymous object :
+ new Calculation().fact(5);
+
+Java static keyword :
+The static keyword in Java is used for memory management mainly.static keyword apply with:
+variables : refer to the common property of all objects.The static variable gets memory only once.It makes your program memory efficient.(it saves memory).
+methods: A static method can access static data member and can change the value of it.The static method can not use non static data member or call non-static method directly.
+         this and super cannot be used in static context.
+ blocks and nested classes.
+
+
+Difference between object and class :
+
+1) 
+   Object is an instance of a class.
+   Class is a blueprint or template from which objects are created.
+
+2)
+  Object is a physical entity.
+  Class is a logical entity.
+
+3)
+  Object is created through new keyword mainly.(Student s1=new Student();)
+  Class is declared using class keyword.(class Student{})
+
+4)
+ Object is created many times as per requirement.
+ Class is declared once.
+
+5)
+ Object allocates memory when it is created.
+ Class doesn't allocated memory when it is created.
+
+6)
+ There are many ways to create object in java such as new keyword.
+ There is only one way to define class in java using class keyword.
+
+
+Difference between method overloading and method overriding in java:\
+
+1)
+  Method overloading is performed within class.
+  Method overriding occurs in two classes that have IS-A (inheritance) relationship.
+
+2)
+ In case of method overloading, parameter must be different.
+ In case of method overriding, parameter must be same.
+
+3)
+ Method overloading is the example of compile time polymorphism.
+ Method overriding is the example of run time polymorphism.
+
+4)
+ Return type can be same or different in method overloading. But you must have to change the parameter.
+ Return type must be same or covariant in method overriding.
+
+
+Difference between StringBuffer And StringBuffer:
+
+1)
+ String class is immutable.
+ StringBuffer class is mutable.
+
+2)
+ String is slow and consumes more memory when you concat too many strings.
+ StringBuffer is fast and consumes less memory when you cancat strings.
+
+
+Exception Handling :
+  The Exception Handling in Java is one of the powerful mechanism to handle the runtime errors so that normal flow of the application can be maintained.
+  Its type and the difference between checked and unchecked exceptions.
+  
+  Checked exceptions are checked at compile-time.
+  Unchecked exceptions are not checked at compile-time,but they are checked at runtime.
+  
+ * The exception handling is one of the powerful mechanism to handle the runtime errors.
+ * There are 5 keywords exception handling
+ * try,catch,finally,throw,throws
+ * Arithmetic Exception
+ * Null pointer Exception
+ * String Index Out Of Bounds Exception
+ * Number Format Exception
+ * Fill Not Found Exception
+ * Array Index of Bounds Exception
+
+
+For each try block, there can be only one finally block.
+
+Java Multithreading : Multithreading in Java is a process of executing multiple threads simultaneously.
+                                                          (জাভাতে মাল্টিথ্রেডিং একসাথে একাধিক থ্রেড চালানোর প্রক্রিয়া।)
+ * saves memory(don't allocate separate memory area)
+ * less time than process
+ * Java Multithreading is mostly used in games, animation, etc.
+ * you can perform multiple operations at the same time.
+ * You can perform many operations together, so it saves time.
+ * Threads are independent
+
+Multitasking : Multitasking is a process of executing multiple tasks simultaneously.
+                                       (মাল্টিটাস্কিং একসাথে একাধিক টাস্ক সম্পাদন করার প্রক্রিয়া।)
+ Multitasking can be achieved in two ways:
+      1)Process-based Multitasking (Multiprocessing)
+             each process allocates a separate memory area.A process is heavyweight.
+      2)Thread-based Multitasking (Multithreading)
+             Threads share the same address space.A thread is lightweight.
+
+Thread : A thread is a lightweight subprocess, the smallest unit of processing. It is a separate path of execution.
+         Threads are independent.It uses a shared memory area.
+
+ There is only 5 states in thread life cycle in java.
+ 1) New
+ 2) Runnable
+ 3) Running
+ 4) Non-Runnable (Blocked)
+ 5) Terminated
+
+There are two ways to create a thread:
+ 1) By extending Thread class
+ 2) By implementing Runnable interface.

@@ -1,0 +1,7 @@
+//				defaultTableModel = (DefaultTableModel)table.getModel();
+//				int selected = table.getSelectedRow();
+//				int id = Integer.parseInt(defaultTableModel.getValueAt(selected, 0).toString());
+//				txtName.setText(defaultTableModel.getValueAt(selected, 1).toString());
+//				txtPhone.setText(defaultTableModel.getValueAt(selected, 2).toString());
+//				txtEmail.setText(defaultTableModel.getValueAt(selected, 3).toString());
+//				txtAddress.setText(defaultTableModel.getValueAt(selected, 4).toString());

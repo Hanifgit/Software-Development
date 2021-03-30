@@ -1,0 +1,7 @@
+package Lab_05;
+
+public class TestProgram {
+	public static void main(String[] args) {
+		
+	}
+}

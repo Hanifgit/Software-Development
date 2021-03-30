@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Day 3 - BMI Calculator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="RangeCondition">If your BMI is less than 18.5, it falls within the underweight range.
+        If your BMI is 18.5 to 25, it falls within the normal. If your BMI is 25.0 to 30, it falls within
+        the overweight range. If your BMI is 30.0 or higher, it falls within the obese range.</string>
+</resources>

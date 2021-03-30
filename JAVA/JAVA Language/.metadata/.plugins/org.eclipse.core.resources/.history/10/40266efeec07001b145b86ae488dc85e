@@ -1,0 +1,31 @@
+package RakibulAhasanPapon;
+
+
+public class  Calculator {
+
+	public double adding(double balance,double deposit) throws MyException {
+		if(deposit<=0) {
+			throw new MyException("Deposit is negative");
+		}
+		return balance += deposit;
+	}
+	
+	public double subtracting(double balance,double withdraw){
+		try {
+			if(withdraw>balance) {
+				throw new MyException("Withdraw greater then balance");
+			}
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return balance-=withdraw;
+	}
+	
+	public double multiplying(double interestRate,double timePeriod) {
+		return interestRate*timePeriod;
+	}
+	
+	public void dividing() {
+		System.out.println("Divison");
+	}
+}

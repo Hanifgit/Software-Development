@@ -1,0 +1,24 @@
+package Lab_05;
+
+import java.util.Scanner;
+
+public class TestProgram {
+	public static void main(String[] args) {
+		PersonalInfo objInfo;
+		objInfo  = new Student();
+		objInfo.personalAddress(22, "Lakshmipur", 565.656, "Male");
+		objInfo.academicInfo(22, "Papon", "CSE", 3.5);
+		
+		Student objStudent = new Student();
+		
+		Scanner input = new Scanner(System.in);
+		objStudent.setId(input.nextInt());
+		objStudent.setHome_district(input.nextLine());
+		objStudent.setHeight(input.nextDouble());
+		objStudent.setGender(input.nextLine());
+		objStudent.setName(input.nextLine());
+		objStudent.setDept(input.nextLine());
+		objStudent.setCgpa(input.nextDouble());
+		input.close();
+	}
+}

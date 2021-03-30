@@ -1,0 +1,71 @@
+package Store_Management_System;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+
+public class Dashboard extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Dashboard frame = new Dashboard();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Dashboard() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 792, 497);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(0, 0, 776, 458);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(new Color(100, 149, 237));
+		panel_1.setBounds(0, 0, 776, 85);
+		panel.add(panel_1);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(new Color(100, 149, 237));
+		panel_2.setBounds(0, 85, 189, 373);
+		panel.add(panel_2);
+		
+		JPanel panel_5 = new JPanel();
+		panel_5.setBounds(187, 86, 589, 372);
+		panel.add(panel_5);
+		panel_5.setLayout(null);
+		
+		JPanel panel_4 = new JPanel();
+		panel_4.setBounds(0, 0, 589, 372);
+		panel_5.add(panel_4);
+		panel_4.setLayout(null);
+		
+		JPanel panel_3 = new JPanel();
+		panel_3.setBounds(0, 0, 589, 372);
+		panel_4.add(panel_3);
+	}
+}

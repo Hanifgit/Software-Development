@@ -1,0 +1,43 @@
+
+public class Main {
+	int height = 5;
+	void printL() 
+	{ 
+	    int i, j; 
+	    for (i = 0; i < height; i++) { 
+	        System.out.print("*"); 
+	        for (j = 0; j <= height; j++) { 
+	            if (i == height - 1) 
+	            	 System.out.print("*"); 
+	            else
+	            	 System.out.print(" "); 
+	        } 
+	        System.out.println(); 
+	    }
+	    System.out.println(); 
+	}
+	
+	void printN() 
+	{ 
+	    int i, j, counter = 0; 
+	    for (i = 0; i < height; i++) { 
+	    	//System.out.print("*"); 
+	        for (j = 0; j <= height; j++) { 
+	            if (j == height || j == counter) 
+	            	System.out.print("*"); 
+	          
+	            else
+	            	System.out.print(" "); 
+	        } 
+	        counter++; 
+	        System.out.println();
+	    } 
+	}
+	
+	public static void main(String[] args) {
+		Main obj = new Main();
+		
+		obj.printL();
+		obj.printN();
+	}
+}

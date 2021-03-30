@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Custom Toast</string>
+    <string name="LoginTxt">Login</string>
+    <string name="Toast">Login Successfully!!</string>
+</resources>

@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Day 2 - Android views and Layouts"

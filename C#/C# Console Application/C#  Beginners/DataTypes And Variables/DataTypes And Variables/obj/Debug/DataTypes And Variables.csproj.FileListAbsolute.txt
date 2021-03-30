@@ -1,0 +1,6 @@
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\DataTypes And Variables\DataTypes And Variables\bin\Debug\DataTypes And Variables.exe.config
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\DataTypes And Variables\DataTypes And Variables\bin\Debug\DataTypes And Variables.exe
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\DataTypes And Variables\DataTypes And Variables\bin\Debug\DataTypes And Variables.pdb
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\DataTypes And Variables\DataTypes And Variables\obj\Debug\DataTypes And Variables.csproj.CoreCompileInputs.cache
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\DataTypes And Variables\DataTypes And Variables\obj\Debug\DataTypes And Variables.exe
+D:\GitHub\Web_Development\C#\C# Console Application\C#  Beginners\DataTypes And Variables\DataTypes And Variables\obj\Debug\DataTypes And Variables.pdb

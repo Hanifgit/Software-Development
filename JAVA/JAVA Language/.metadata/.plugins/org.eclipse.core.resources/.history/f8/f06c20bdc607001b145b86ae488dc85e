@@ -1,0 +1,25 @@
+package RakibulAhasanPapon;
+
+
+public class Calculator {
+	
+	
+	public double adding(double balance,double deposit) {
+		return balance + deposit;
+	}
+	
+	public double subtracting(double balance,double withdraw) throws RakibulAhasanPapon.MyException {
+		if(withdraw>balance) {
+			throw new MyException("My Message");
+		}
+		return balance-withdraw;
+	}
+	
+	public void multiplying() {
+		
+	}
+	
+	public void dividing() {
+		
+	}
+}

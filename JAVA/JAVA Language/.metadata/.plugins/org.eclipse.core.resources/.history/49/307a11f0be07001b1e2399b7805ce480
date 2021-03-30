@@ -1,0 +1,24 @@
+package RakibulAhasanPapon;
+
+public class Account extends Calculator {
+    String personINFO;
+    double balance;
+    double interestRate;
+    
+    public Account(String personINFO,double balance) {
+		// TODO Auto-generated constructor stub
+	}
+    
+    public void  withdraw() {
+		
+	}
+    
+    public void deposit() {
+		
+	}
+    
+    public void calculateInterest() {
+		
+	}
+    
+}

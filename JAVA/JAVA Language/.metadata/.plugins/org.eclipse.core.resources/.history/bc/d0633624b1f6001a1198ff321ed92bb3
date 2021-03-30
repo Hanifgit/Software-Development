@@ -1,0 +1,13 @@
+package PrimaryConceptAbstraction;
+public class Main {
+	public static void main(String[] args) {
+		MobileUser rVariabl; //Reference variable
+		
+		rVariabl  = new Papon();
+		rVariabl.SendMessage();
+		rVariabl.Call();
+		
+		rVariabl  = new Ahasan();
+		rVariabl.SendMessage();
+	}
+}

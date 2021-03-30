@@ -1,0 +1,11 @@
+C:\Users\Papon\source\repos\RegistrationEnter\Registration\bin\Debug\Registration.exe.config
+C:\Users\Papon\source\repos\RegistrationEnter\Registration\bin\Debug\Registration.exe
+C:\Users\Papon\source\repos\RegistrationEnter\Registration\bin\Debug\Registration.pdb
+C:\Users\Papon\source\repos\RegistrationEnter\Registration\obj\Debug\Registration.csprojAssemblyReference.cache
+C:\Users\Papon\source\repos\RegistrationEnter\Registration\obj\Debug\Registration.Form1.resources
+C:\Users\Papon\source\repos\RegistrationEnter\Registration\obj\Debug\Registration.Properties.Resources.resources
+C:\Users\Papon\source\repos\RegistrationEnter\Registration\obj\Debug\Registration.csproj.GenerateResource.cache
+C:\Users\Papon\source\repos\RegistrationEnter\Registration\obj\Debug\Registration.csproj.CoreCompileInputs.cache
+C:\Users\Papon\source\repos\RegistrationEnter\Registration\obj\Debug\Registration.exe
+C:\Users\Papon\source\repos\RegistrationEnter\Registration\obj\Debug\Registration.pdb
+C:\Users\Papon\source\repos\RegistrationEnter\Registration\obj\Debug\Registration.Confirmation.resources

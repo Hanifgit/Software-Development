@@ -1,0 +1,71 @@
+package Lab_05;
+
+public class Student extends PersonalInfo {
+    
+	@Override
+	void personalAddress(int id, String home_district, int height, String gender) {
+		
+	}
+
+	@Override
+	void academicInfo(int id, String name, String dept, double cgpa) {
+		
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getHome_district() {
+		return home_district;
+	}
+
+	public void setHome_district(String home_district) {
+		this.home_district = home_district;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDept() {
+		return dept;
+	}
+
+	public void setDept(String dept) {
+		this.dept = dept;
+	}
+
+	public double getCgpa() {
+		return cgpa;
+	}
+
+	public void setCgpa(double cgpa) {
+		this.cgpa = cgpa;
+	}
+     
+}

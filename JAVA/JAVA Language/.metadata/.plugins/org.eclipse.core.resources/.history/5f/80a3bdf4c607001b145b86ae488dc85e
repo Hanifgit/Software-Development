@@ -1,0 +1,32 @@
+package RakibulAhasanPapon;
+
+
+public class Calculator {
+	
+	
+	public double adding(double balance,double deposit) throws MyException {
+		if(deposit<=0) {
+			throw new MyException("My Message");
+		}
+		return balance + deposit;
+	}
+	
+	public double subtracting(double balance,double withdraw){
+		try {
+			if(withdraw>balance) {
+				throw new MyException("My Message");
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return balance-withdraw;
+	}
+	
+	public void multiplying() {
+		
+	}
+	
+	public void dividing() {
+		
+	}
+}

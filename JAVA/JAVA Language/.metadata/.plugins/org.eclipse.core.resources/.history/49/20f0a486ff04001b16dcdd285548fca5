@@ -1,0 +1,7 @@
+package NestedInterface;
+
+public interface Nested {
+      public interface Message{
+    	  
+      }
+}

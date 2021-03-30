@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#407294"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/NameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/Name"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHighlight="@color/design_default_color_primary_variant"
+        android:textIsSelectable="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:paddingBottom="10sp"
+        />
+
+    <TextView
+        android:id="@+id/AgeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ReleaseDate"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        />
+
+    <ScrollView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="10sp"
+            android:id="@+id/Introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Introduction"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            />
+    </ScrollView>
+
+</LinearLayout>

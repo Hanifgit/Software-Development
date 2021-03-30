@@ -1,0 +1,15 @@
+package RakibulAhasanPapon;
+
+public class Main {
+	public static void main(String[] args) {
+		try {
+			
+			Account objAccount = new Account("Rakibul Ahasan Papon ,ID- 022", 10000, 20);
+			objAccount.withdraw();
+			objAccount.deposit();
+			objAccount.calculateInterest();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}

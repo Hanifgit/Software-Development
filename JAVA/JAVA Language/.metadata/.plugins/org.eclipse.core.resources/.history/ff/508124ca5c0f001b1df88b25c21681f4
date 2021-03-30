@@ -1,0 +1,23 @@
+package individualPresentation;
+
+public class ThreadMethod_01 extends Thread {
+	@Override
+	public void run() {
+		// print currently executing thread
+		System.out.println("Inside run Method : "+Thread.currentThread().getName());
+	}
+
+	public static void main(String args[]) {
+		// creating two thread
+		ThreadMethod_01 t1 = new ThreadMethod_01();
+		ThreadMethod_01 t2 = new ThreadMethod_01();
+		
+		// this will call the run() method
+		t1.start();
+		t2.start();
+		
+//		Thread thread = Thread.currentThread();
+//		System.out.println(thread.getName());
+		System.out.println("Inside main Method : "+Thread.currentThread().getName());
+	}
+}

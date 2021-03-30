@@ -1,0 +1,10 @@
+package individualPresentation;
+
+public class Synchronization_01 extends Thread {
+	public static void main(String[] args) {
+		Synchronization_01 sc1 = new Synchronization_01();
+		Synchronization_01 sc2 = new Synchronization_01();
+		sc1.start();
+		sc2.start();
+	}
+}

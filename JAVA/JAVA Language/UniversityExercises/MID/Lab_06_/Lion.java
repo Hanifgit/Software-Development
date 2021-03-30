@@ -1,0 +1,27 @@
+package Lab_06_;
+
+public class Lion extends Animal {
+
+	public Lion(int size,int feet,String typeDiet) {
+		this.size = size;
+		this.feet = feet;
+		this.typeDiet = typeDiet;
+	}
+	
+	@Override
+	void breathe() {
+		System.out.println("lion's breath up to 7 times");
+	}
+
+	@Override
+	void eat() {
+		System.out.println("Lions eats antelopes, buffaloes, zebras, young elephants, rhinos, hippos, wild hogs, crocodiles and giraffes etc");	
+	}
+
+	@Override
+	void move() {
+		System.out.println("The lions can only run fast for a short time.");
+		
+	}
+
+}

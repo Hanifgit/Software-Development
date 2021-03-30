@@ -1,0 +1,18 @@
+package Catcutator;
+
+import javax.swing.JFrame;
+
+public class Standard extends JFrame {
+	
+	public Standard() {
+		
+	}
+	
+	public static void main(String[] args) {
+		Standard icon = new Standard();
+		icon.setVisible(true);
+		icon.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    icon.setBounds(200, 100, 1020, 200);
+		icon.setTitle("Notepad");
+	}
+}

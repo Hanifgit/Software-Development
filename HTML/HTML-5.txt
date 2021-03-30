@@ -1,0 +1,82 @@
+HTML Tags
+----------
+1) Heading = <h1></h1> , <h2></h2> , <h3></h3> , <h4></h4> , <h5></h5> , <h6></h6> ,<h7></h7>
+
+2) Paragraphs = <p></p>
+
+3) Bold = <b></b>
+
+4) Italic = <i></i>
+
+5) underline = <u></u>
+
+6) Strikethrough = <s></s>
+
+7) Sub Script = H<sub>2</sub>o (nise)
+
+8) Super Script = 12<sup>th</sup> (upre)
+
+9) Break = <br>
+
+10) Non-Breaking Space = &nbsp;
+
+11)
+    Align =  <h1 align = "center"> </h1>
+    Align =  <h1 align = "left"> </h1>
+    Align =  <h1 align = "right"> </h1>
+    Justify = <p align = "justify"> </p>
+
+[Font Tag (http://websafecolors.info/)]
+
+12) Color = <font color = "red"> </font>
+
+13) Size =  font size = "7"> </font>
+
+14) Face =  font face = "arial"> </font>
+
+Example = <h1 align = "center"> <font color = "red" size = "4" face = "arial"> Hello Word </font></h1>
+
+
+HTML List 
+---------
+
+1) Unorder List = <ul type == "square"> 
+                      <li>square</li>
+                      <li>circle</li>
+                      <li>dis</li>
+                   </ul>
+
+2) Order List  = <ol type = "A" start = "3">
+                    <li>A</li>
+                    <li>a</li>
+                     li>1</li>
+                  <ol>
+
+3) Description List = <dl>
+                           <dt>Heading</dt>
+                           <dd>Hello Word</dd>
+                      </dl>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

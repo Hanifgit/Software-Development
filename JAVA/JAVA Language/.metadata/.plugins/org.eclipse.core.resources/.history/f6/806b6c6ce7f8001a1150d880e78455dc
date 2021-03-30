@@ -1,0 +1,9 @@
+package QuizeForAbstraction;
+
+public abstract class MobileUser {
+	abstract void SendMessage(); 
+	
+	void Call() {
+		System.out.println("I am here.");
+	}
+}
