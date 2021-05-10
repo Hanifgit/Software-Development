@@ -1,0 +1,89 @@
+Laravel 8 JetStream
+
+1) laravel --version [check your pc laravel version running]
+
+2) https://github.com/laravel/installer/releases [check latest laravel version]
+
+3) composer global update [if your pc laravel version and latest laravel version is not same then run this command in your terminal]
+
+4) Laravel fresh project create
+    (i) If new relage version laravel using:
+          laravel new <project_name> --jet --dev
+
+    (ii) Else using:
+          laravel new <project_name> --jet
+
+    Choose this two option after upon command:
+     (0 and yes )
+
+5) If you can this project, open your vsCode, then this command run your terminal:
+  code .
+
+6) npm install [this command run your terminal]
+
+7) npm run dev [this command run your terminal]
+
+8) your project link database. you should go to file:
+   .env
+
+   And set: 
+   DB_DATABASE=databaseNAME, [Create databaseName your local_server(XAMPP)]
+   DB_PASSWORD=password  [and if your local_serve(XAMPP) password is given]
+   APP_URL=http://127.0.0.1:8000 [this path find 'php artisan serve' command run your under the project terminal]
+
+9) Eamil verification :
+
+    Mailtrap :
+
+    (i) config/fortify.php:
+        'features' => [
+           Features::emailVerification(),
+        ]
+       This features enable(uncomment)
+
+    (ii) app/Models/User.php:
+       class User extends Authenticatable implements MustVerifyEmail
+
+    (iii) .env:
+        MAIL_MAILER=smtp
+        MAIL_HOST=smtp.mailtrap.io
+        MAIL_PORT=2525
+        MAIL_USERNAME=c8fefabb648798
+        MAIL_PASSWORD=64b3684232561f
+        MAIL_ENCRYPTION=tls
+        MAIL_FROM_ADDRESS=your_email@gmail.com
+        MAIL_FROM_NAME="${APP_NAME}"
+        
+        Bellow information find this link : 'https://mailtrap.io/inboxes' then
+        Add Inbox/Setting/SMTP Setting/Laravel7+
+
+       Gmail :
+
+       (i) config/fortify.php:
+        'features' => [
+           Features::emailVerification(),
+        ]
+       This features enable(uncomment)
+
+      (ii) app/Models/User.php:
+       class User extends Authenticatable implements MustVerifyEmail
+
+      (iii) .env:
+        
+         MAIL_MAILER=smtp
+         MAIL_HOST=smtp.googlemail.com
+         MAIL_PORT=465
+         MAIL_USERNAME=your_email@gmail.com
+         MAIL_PASSWORD=your_email_password
+         MAIL_ENCRYPTION=ssl
+         MAIL_FROM_ADDRESS=your_email@gmail.com
+         MAIL_FROM_NAME="${APP_NAME}"
+
+9) php artisan migrate [this command run your under the project terminal and database and database table created]
+
+10) If JetStream any feature hide then got to under phoject file:
+    jetstream.php && fortify.php
+    Then uncomment....
+
+11) php artisan serve [run your project in your browser]
+
