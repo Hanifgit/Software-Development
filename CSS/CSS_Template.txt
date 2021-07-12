@@ -1,0 +1,38 @@
+background-color: lightblue;
+color: white;
+text-align: center;
+font-family: verdana;
+font-size: 20px;
+
+#para1 {
+  text-align: center;
+  color: red;
+}
+.center {
+  text-align: center;
+  color: red;
+}
+<p id="para1">Hello World!</p>
+
+margin-left: 20px;
+
+style="background-color:DodgerBlue;"
+<h1 style="color:Tomato;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+background-color: lightblue;
+background-image: url("paper.gif");
+background-repeat: repeat-x;
+background-position: right top;
+background-attachment: fixed;
+opacity: 0.3;
+border-style: dotted;
+border-width: 5px;
+border-color: red;
+
+border-top-style: dotted;
+border-right-style: solid;
+border-bottom-style: dotted;
+border-left-style: solid;
+border: 5px solid red;
+border-left: 6px solid red;
+border-radius: 5px;
