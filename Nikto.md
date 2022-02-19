@@ -21,7 +21,7 @@ Since it’s inbuilt in Kali, you don’t need to install anything.
 It will open the terminal where you can run the scanning against your web server. There is multiple syntaxes you can use to run the scan.
 ```
 ```
-$ nikto –h $webserver_url
+$ nikto –h $webserver_url [Don’t forget to change $webserverurl with your web server actual IP or FQDN.]
 For Example : $ nikto -h thewebchecker.com
 ```
 ![image](https://user-images.githubusercontent.com/59710234/154804141-0769a334-23dc-4774-977f-c699aeb8d6bd.png)
