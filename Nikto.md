@@ -51,7 +51,7 @@ $ nikto -h 45.33.32.156
 
 N.T: scan a host with Nikto
 ```
-### Save the scanning result a file
+### Save the Scanning Result a File
 ```
 Nikto –h [Server IP Address] –p [port] –o [file name] –F [file type]
 
