@@ -38,10 +38,14 @@ nikto -update
 ```
 ### Nikto Help Menu
 ```
-$ nikto -Help
+$ nikto -Help or
+$ nikto -h
+
+See all the functionality that used in nikto
 ```
 ![image](https://user-images.githubusercontent.com/59710234/154814974-8f51234b-b909-4c2d-b144-e74a01ea7501.png)
-### Nikto Web Server Scan
+
+### Nikto Web Server Scan (Server IP)
 ```
 $ nikto -h <IP or hostname>
 
@@ -49,9 +53,9 @@ For Example :
 $ nikto -h thewebchecker.com
 $ nikto -h 45.33.32.156
 
-N.T: scan a host with Nikto
+N.T: scan a host with Nikto. Here -h means the host
 ```
-### Save the Scanning Result a File
+### Save the Scanning Result a Text File
 ```
 Nikto –h [Server IP Address] –p [port] –o [file name] –F [file type]
 
@@ -62,6 +66,31 @@ The default port is 80, so if you did not specify the port it will be 80 by defa
 ```
 ![image](https://user-images.githubusercontent.com/59710234/154804141-0769a334-23dc-4774-977f-c699aeb8d6bd.png)
 
+### Scan a Specific Port for Server IP
+```
+nikto -h serverIp -p port
+For Example: 
+$ nikto -h 119.18.48.147 -p 80
+
+Here -p means Port
+```
+### proxy server and scan server_Ip
+```
+First, we need to go to the Nikto config file. We can find out nikto config file using this command.
+$ locate nikto.conf
+
+And uncomment these two lines.
+```
+![image](https://user-images.githubusercontent.com/59710234/154817466-2e1c6976-c1c6-4586-a3ad-7ffbe9821a01.png)
+
+```
+Then save the file. After saving the file go to terminal and enter this command. It will start a scan but this 
+time using proxy.
+
+nikto -h serverIp -useproxy
+
+For Example: nikto -h 119.18.48.147 -useproxy
+```
 ### Nikto Multi Domain Scan
 ```
  IP addresses or domains put them in a text file (domains.txt) separated by newlines. Nikto will know that the scan has to be performed on each domain / IP address.
