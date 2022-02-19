@@ -24,43 +24,6 @@ Since it’s inbuilt in Kali, you don’t need to install anything.
 It will open the terminal where you can run the scanning against your web server. There is multiple syntaxes you 
 can use to run the scan.
 ```
-### Nikto Web Server Scan
-```
-$ nikto -h <IP or hostname>
-
-For Example : 
-$ nikto -h thewebchecker.com
-$ nikto -h 45.33.32.156
-
-N.T: scan a host with Nikto
-```
-```
-Nikto –h [Server IP Address] –p [port] –o [file name] –F [file type]
-
-For Example :
-$ nikto -h 45.33.32.156 -p 80 -o nikto_result -F txt
-
-The default port is 80, so if you did not specify the port it will be 80 by default.
-```
-![image](https://user-images.githubusercontent.com/59710234/154804141-0769a334-23dc-4774-977f-c699aeb8d6bd.png)
-### Nikto Multi Domain Scan
-```
- IP addresses or domains put them in a text file (domains.txt) separated by newlines. Nikto will know that the scan has to be performed on each domain / IP address.
- domains.txt =>
-  scanme.nmap.org
-  nmap.org.
-  
-  nikto -h file_name.txt
-  For Example : nikto -h domains.txt
-  
-  touch file   — create or update file
-  nano file    — file inside some writing
-  rm  file    — delete file
-  
-  cat > file     — places standard input into file
-  cat file    — file inside text show
-
-```
 ### Nikto Version
 ```
 $ nikto
@@ -76,3 +39,43 @@ nikto -update
 $ nikto -Help
 ```
 ![image](https://user-images.githubusercontent.com/59710234/154814974-8f51234b-b909-4c2d-b144-e74a01ea7501.png)
+### Nikto Web Server Scan
+```
+$ nikto -h <IP or hostname>
+
+For Example : 
+$ nikto -h thewebchecker.com
+$ nikto -h 45.33.32.156
+
+N.T: scan a host with Nikto
+```
+Save The Scanning Result a File
+```
+Nikto –h [Server IP Address] –p [port] –o [file name] –F [file type]
+
+For Example :
+$ nikto -h 45.33.32.156 -p 80 -o nikto_result -F txt
+
+The default port is 80, so if you did not specify the port it will be 80 by default.
+```
+![image](https://user-images.githubusercontent.com/59710234/154804141-0769a334-23dc-4774-977f-c699aeb8d6bd.png)
+
+### Nikto Multi Domain Scan
+```
+ IP addresses or domains put them in a text file (domains.txt) separated by newlines. Nikto will know that the scan has to be performed on each domain / IP address.
+ 
+  touch file   — create or update file
+  nano file    — file inside some writing
+  rm  file    — delete file
+  cat > file     — places standard input into file
+  cat file    — file inside text show
+  
+  domains.txt =>
+   scanme.nmap.org
+   nmap.org.
+  
+  nikto -h file_name.txt
+  
+  For Example : 
+  $ nikto -h domains.txt
+```
