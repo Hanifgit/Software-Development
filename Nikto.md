@@ -1,8 +1,8 @@
-Scan your web server for vulnerabilities. 
+```Scan your web server for vulnerabilities. 
 
 If you are looking to test Intranet applications or in-house applications, then you can use the Nikto web scanner. It is capable of scanning for over 6700 items
 to detect misconfiguration, risky files, etc. and some of the features include.
-
+```
 ### Using Nikto on Kali Linux
 ```
 Since it’s inbuilt in Kali, you don’t need to install anything.
