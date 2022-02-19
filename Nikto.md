@@ -11,11 +11,17 @@ a web server in the quickest time possible. Nikto is included in Kali Linux.
 ### Nikita History
 ```
 Original author: Chris Sullo
+
 Release: 2.1.6 / July 9, 2015
+
 Write: Perl, HTML, roff (software), Dockerfile
+
 Operating system: Unix-like
+
 Available in : English
+
 Type : Vulnerability scanner
+
 Supported Platforms: Windows and Linux
 ```
 ### How to install Nikto on Linux
