@@ -22,7 +22,7 @@ It will open the terminal where you can run the scanning against your web server
 can use to run the scan.
 ```
 ```
-$ nikto –h $webserver_url [Don’t forget to change $webserverurl with your web server actual IP or FQDN.]
+$ nikto –h $webserver_url      [Don’t forget to change $webserverurl with your web server actual IP or FQDN.]
 For Example : $ nikto -h thewebchecker.com
 ```
 ![image](https://user-images.githubusercontent.com/59710234/154804141-0769a334-23dc-4774-977f-c699aeb8d6bd.png)
