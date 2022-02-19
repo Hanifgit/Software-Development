@@ -16,7 +16,7 @@ Step 3: root@kali:~/nikto/program# perl nikto.pl
 ```
 Since it’s inbuilt in Kali, you don’t need to install anything.
 ```
-![image](https://user-images.githubusercontent.com/59710234/154803045-2009dc12-5e99-4321-99da-ea02ce580d8e.png)
+![image](https://user-images.githubusercontent.com/59710234/154805095-e2fb3bd0-5373-4ffc-a5c8-ec01705119ed.png)
 ```
 It will open the terminal where you can run the scanning against your web server. There is multiple syntaxes you 
 can use to run the scan.
