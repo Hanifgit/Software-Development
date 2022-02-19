@@ -1,7 +1,10 @@
-```Scan your web server for vulnerabilities. 
+```
+Scan your web server for vulnerabilities. 
 
-If you are looking to test Intranet applications or in-house applications, then you can use the Nikto web scanner. It is capable 
-of scanning for over 6700 items to detect misconfiguration, risky files, etc. and some of the features include.
+Nikto is an Open Source (GPL) free vulnerability scanner software that scans web servers for over 6700 potentially dangerous files/programs
+
+If you are looking to test Intranet applications or in-house applications, then you can use the Nikto web scanner. It will test a web server in 
+the quickest time possible. Nikto is included in Kali Linux.
 ```
 ### How to install Nikto on Linux
 ```
@@ -22,7 +25,11 @@ It will open the terminal where you can run the scanning against your web server
 can use to run the scan.
 ```
 ```
-$ nikto –h $webserver_url      [Don’t forget to change $webserverurl with your web server actual IP or FQDN.]
+$ nikto -h <IP or hostname>
 For Example : $ nikto -h thewebchecker.com
 ```
 ![image](https://user-images.githubusercontent.com/59710234/154804141-0769a334-23dc-4774-977f-c699aeb8d6bd.png)
+```
+$ nikto
+```
+![image](https://user-images.githubusercontent.com/59710234/154814147-d423ffcc-594c-4e3a-8e12-dcaf4c2cfc80.png)
