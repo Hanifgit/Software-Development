@@ -74,7 +74,7 @@ $ nikto -h 119.18.48.147 -p 80
 
 Here -p means Port
 ```
-### proxy server and scan server_Ip
+### Proxy Server and Scan ServerIp
 ```
 First, we need to go to the Nikto config file. We can find out nikto config file using this command.
 $ locate nikto.conf
