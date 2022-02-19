@@ -2,10 +2,11 @@
 ```
 Scan your web server for vulnerabilities. 
 
-Nikto is an Open Source (GPL) free vulnerability scanner software that scans web servers for over 6700 potentially dangerous files/programs
+Nikto is an Open Source (GPL) free vulnerability scanner software that scans web servers for over 6700 potentially dangerous files
+or programs
 
-If you are looking to test Intranet applications or in-house applications, then you can use the Nikto web scanner. It will test a web server in 
-the quickest time possible. Nikto is included in Kali Linux.
+If you are looking to test Intranet applications or in-house applications, then you can use the Nikto web scanner. It will test
+a web server in the quickest time possible. Nikto is included in Kali Linux.
 ```
 ### How to install Nikto on Linux
 ```
