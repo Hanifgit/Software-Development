@@ -81,4 +81,4 @@ The default port is 80, so if you did not specify the port it will be 80 by defa
   For Example : 
   $ nikto -h domains.txt
 ```
-![image](https://user-images.githubusercontent.com/59710234/154817197-afd33aca-ab00-4d9b-abcd-2abb06997a6c.png)
+![image](https://user-images.githubusercontent.com/59710234/154817223-b3edca82-b05e-49ff-a2be-6ee5561e7962.png)
