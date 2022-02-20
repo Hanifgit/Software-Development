@@ -121,3 +121,5 @@ For Example: nikto -h 119.18.48.147 -useproxy
   $ nikto -h domains.txt
 ```
 ![image](https://user-images.githubusercontent.com/59710234/154817223-b3edca82-b05e-49ff-a2be-6ee5561e7962.png)
+
+Wish us good luck!
